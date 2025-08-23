@@ -30,36 +30,3 @@ router.delete("/:orderId/items/:orderItemId", removeOrderItem);
 router.post("/:orderId/recalculate", recalcTotalEndpoint);
 
 export default router;
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // routes/order.routes.js
-// import { Router } from "express";
-// import { 
-//   placeOrderFromCart,
-//   getMyOrders,
-//   getOrderById,
-// } from "../Controllers/order.controller.js";
-
-// const router = Router();
-
-// // Place order from cart
-// router.post("/checkout", placeOrderFromCart);
-
-// // Current user's orders
-// router.get("/my", getMyOrders);
-
-// // Single order
-// router.get("/:orderId", getOrderById);
-
-// export default router;
