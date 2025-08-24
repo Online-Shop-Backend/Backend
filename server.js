@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import addressRoutes from "./Routes/cartroutes.js";
+import cartRoutes from "./Routes/cartroutes.js";
 
 
 dotenv.config();
@@ -12,6 +12,7 @@ const app = express();
 app.use(express.json());
 
 app.use("/api/Cart", cartroutes);
+app.use("/api/CartItems", cartitemroutes);
 
 
 // Connect to MongoDB
